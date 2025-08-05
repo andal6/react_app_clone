@@ -12,6 +12,7 @@ import Usercontext from "./component/UserContext.js";
 import { Provider } from "react-redux";
 import appstore from "./utils/appstore.js";
 import Cart from "./component/Cart.js";
+import About from "./component/About.js";
 
 
 console.log(<Body/>);
