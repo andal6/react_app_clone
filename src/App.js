@@ -16,9 +16,6 @@ import Cart from "./component/Cart.js";
 
 console.log(<Body/>);
 
-const About=lazy(()=>import("./component/About.js"))
-const Contact=lazy(()=>import("./component/Contact.js"))
-
 const AppLayout=()=>{
    const[username,setusername]=useState();
 
@@ -59,12 +56,12 @@ const appRouter=createBrowserRouter([
 
          {
            path:"/about",
-           element:<Suspense fallback={"This is About Page, Loading.... please wait"}><About/></Suspense>,
+           element:<About/>,
          },
 
          {
       path:"/contact",
-      element:<Suspense fallback={<h1>Loading.....</h1>}><Contact/></Suspense>,
+      element:><Contact/>,
    },
 {
 path:"/restaurants/:resId",
