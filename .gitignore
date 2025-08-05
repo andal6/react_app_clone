@@ -5,6 +5,8 @@ node_modules/
 
 # testing
 coverage/
+.parcel-cache/
+package-lock.json
 
 # production
 build/
