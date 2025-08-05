@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <script>
+            
+       async function fetchData(){
+
+const data=await fetch("https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=12.8811086&lng=80.2043886&restaurantId=104023&catalog_qa=undefined&submitAction=ENTER")
+const json=await data.json();
+console.log(json)
+            }
+            fetchData()
+        </script>
+    </body>
+</html>

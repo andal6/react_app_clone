@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Simple Form (HTML Only)</h2>
+
+    <form>
+      <label for="name">Name:</label><br />
+      <input
+        type="text"
+        id="name"
+        name="name"
+        onchange="handleChange(this.value)"
+      /><br /><br />
+
+      <label for="email">Email:</label><br />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        onchange="handleChange(this.value)"
+      /><br /><br />
+
+      <input type="submit" value="Submit" />
+      <select onchange="alert('You selected: ' + this.value)">
+  <option value="">--Select--</option>
+  <option value="english">English</option>
+  <option value="tamil">Tamil</option>
+</select>
+
+    </form>
+
+    <script>
+      function handleChange(val) {
+        console.log("You typed:", val);
+      }
+    </script>
+  </body>
+</html>
